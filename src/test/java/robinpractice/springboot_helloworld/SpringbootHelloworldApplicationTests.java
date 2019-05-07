@@ -8,9 +8,11 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.test.context.junit4.SpringRunner;
 import robinpractice.springboot_helloworld.bean.Person;
 
+
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class SpringbootHelloworldApplicationTests {
+
     @Autowired
     private Person person;
 
@@ -26,5 +28,4 @@ public class SpringbootHelloworldApplicationTests {
     public void testBean() {
         System.out.println(ioc.containsBean("helloService"));
     }
-
 }

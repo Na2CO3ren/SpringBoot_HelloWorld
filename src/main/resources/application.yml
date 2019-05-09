@@ -1,12 +1,27 @@
 server:
   port: 8090
+spring:
+  profiles:
+    active: dev
+---
+server:
+  port: 8003
+spring:
+  profiles: dev
+
+---
+server:
+  port: 8004
+spring:
+  profiles: prod
+---
 #friend: {name: robin,age: 18,childrenName: [yiyi,xixi]}
 person:
   lastName: robin
   age: 18
   birth: 1993/10/18
   children:
-    - name: ${person.lastName12:jinglan}_yiyi
+    - name: ${person.lastName:jinglan}_yiyi
       age: 2
     - name: xixi
       age: 1

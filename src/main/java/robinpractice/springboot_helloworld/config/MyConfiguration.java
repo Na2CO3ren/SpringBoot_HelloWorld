@@ -6,8 +6,8 @@ import robinpractice.springboot_helloworld.bean.HelloService;
 
 @Configuration
 public class MyConfiguration {
-    @Bean
-    public HelloService helloService() {
-        return new HelloService();
-    }
+//    @Bean
+//    public HelloService helloService() {
+//        return new HelloService();
+//    }
 }
